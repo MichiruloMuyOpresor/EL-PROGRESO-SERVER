@@ -1,0 +1,413 @@
+{
+	id: "66603E8822064F5E"
+	group: "3DFB4960A301F22D"
+	order_index: 3
+	filename: "mineria"
+	title: "Pica y Calla"
+	icon: {
+		id: "minecraft:netherite_pickaxe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "¡Cava, cava y cava!"
+			icon: {
+				id: "minecraft:netherite_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.0d
+			y: 6.0d
+			shape: "hexagon"
+			subtitle: "Todo enano se merece su agujero. Empieza por hacerlo. Y entrega esa jugosa piedra y tierra."
+			dependencies: ["51BA93B472650FE5"]
+			hide: true
+			size: 2.0d
+			id: "178736AD60E63EE8"
+			tasks: [
+				{
+					id: "67AF15B066C81CF5"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 50L
+				}
+				{
+					id: "76ED27C93785ED6A"
+					type: "item"
+					item: "minecraft:dirt"
+					count: 50L
+				}
+			]
+			rewards: [{
+				id: "7CF153ECABE94FC1"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 2
+			}]
+		}
+		{
+			title: "Metal bien molido"
+			x: -4.0d
+			y: 1.0d
+			subtitle: "Podría ser peor."
+			dependencies: ["7110EBCEDD31499E"]
+			hide: true
+			id: "1F4BACAC3EAF8DC0"
+			tasks: [
+				{
+					id: "47FEC8FCDA6A643B"
+					type: "item"
+					item: "create:crushed_copper_ore"
+				}
+				{
+					id: "3F7F87C6837EB7BC"
+					type: "item"
+					item: "create:crushed_nickel_ore"
+				}
+				{
+					id: "69B3E9684EC37176"
+					type: "item"
+					item: "create:crushed_silver_ore"
+				}
+				{
+					id: "7B742F0E5BF85227"
+					type: "item"
+					item: "create:crushed_aluminum_ore"
+				}
+				{
+					id: "2DE55400787847FE"
+					type: "item"
+					item: "create:crushed_iron_ore"
+				}
+			]
+			rewards: [{
+				id: "63347F52965CA9FB"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Metales sin refinar"
+			x: -4.0d
+			y: 0.0d
+			subtitle: "Necesitamos la mena en estado puro. Así es como nos gusta. Necesitarás un pico con toque sedoso, u otros inventos."
+			dependencies: ["1F4BACAC3EAF8DC0"]
+			hide: true
+			id: "215D2146BF114F77"
+			tasks: [
+				{
+					id: "20C3323FDB3BE188"
+					type: "item"
+					item: "thermal:nickel_ore"
+				}
+				{
+					id: "2AFDBD7791766CEC"
+					type: "item"
+					item: "minecraft:iron_ore"
+				}
+				{
+					id: "6B199D40E0D063A8"
+					type: "item"
+					item: "libvulpes:orealuminum"
+				}
+				{
+					id: "6EAE30E7527C9945"
+					type: "item"
+					item: "libvulpes:orecopper"
+				}
+				{
+					id: "25692EF985238391"
+					type: "item"
+					item: "minecraft:redstone_ore"
+				}
+			]
+			rewards: [{
+				id: "1D6DD283375944D8"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Entrega hierro molido"
+			x: -4.0d
+			y: 3.0d
+			subtitle: "Un encargo sencillo. Cualquier hijo de vecino podría hacerlo. "
+			dependencies: [
+				"7110EBCEDD31499E"
+				"6AA7264E285DD699"
+			]
+			hide: true
+			id: "770A7B719C11E129"
+			tasks: [{
+				id: "4B415A8917397D36"
+				type: "item"
+				item: "create:crushed_iron_ore"
+				count: 50L
+			}]
+			rewards: [{
+				id: "7BA88035B0B8D6DC"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 2
+			}]
+		}
+		{
+			title: "Hay que prepararse"
+			x: -4.0d
+			y: 4.0d
+			subtitle: "Fabrica 5 picos de hierro para comenzar tus aventuras bajo tierra."
+			dependencies: ["178736AD60E63EE8"]
+			hide: true
+			id: "6AA7264E285DD699"
+			tasks: [{
+				id: "36D26D10A7289DFE"
+				type: "item"
+				item: {
+					id: "minecraft:iron_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				count: 5L
+				only_from_crafting: true
+			}]
+			rewards: [{
+				id: "179AB6964D5068D8"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 2
+			}]
+		}
+		{
+			title: "¡Proteged el fuego!"
+			x: -4.0d
+			y: 2.0d
+			subtitle: "EL fuego necesita ser protegido. Pero también necesita carbón. Queremos carbón. Entrega carbón."
+			dependencies: ["770A7B719C11E129"]
+			hide: true
+			id: "7110EBCEDD31499E"
+			tasks: [{
+				id: "7A047870DBB945B0"
+				type: "item"
+				item: "minecraft:coal"
+				count: 100L
+			}]
+			rewards: [{
+				id: "10BDEB0EBE8C6E5E"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 3
+			}]
+		}
+		{
+			title: "Metales del infierno"
+			x: -1.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "Lo de siempre. Buena suerte."
+			dependencies: ["4F586F24BEDE4E29"]
+			hide: true
+			id: "33E68C189E150E1C"
+			tasks: [
+				{
+					id: "62CD4F77C6053F97"
+					type: "item"
+					item: "betternether:cincinnasite_ore"
+				}
+				{
+					id: "60A3CD35927911E4"
+					type: "item"
+					item: "betternether:nether_ruby_ore"
+				}
+				{
+					id: "5D73FBC639D139F0"
+					type: "item"
+					item: "betternether:nether_lapis_ore"
+				}
+			]
+			rewards: [{
+				id: "2158F98FF5544C33"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "¿Tungsteno?"
+			x: -2.0d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "Dicen que este material es ignífugo. Yo creo que con que entregues 10 estaría de puta madre. Refunfuñas demasiado."
+			dependencies: ["2292047E3A8E3777"]
+			hide: true
+			id: "4F586F24BEDE4E29"
+			tasks: [{
+				id: "000F1F988EB0429C"
+				type: "item"
+				item: "stalwart_dungeons:tungsten_ore"
+				count: 10L
+			}]
+			rewards: [{
+				id: "5C168E6593853D8B"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Es mágico"
+			x: -7.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "No me preguntes de donde se saca porque no tengo ni puta idea."
+			dependencies: ["5BAE8242464DE45C"]
+			hide: true
+			id: "104A3D44A66E939B"
+			tasks: [{
+				id: "2ADFDDD6157588B7"
+				type: "item"
+				item: "occultism:iesnium_ore"
+			}]
+		}
+		{
+			title: "Mira como brilla "
+			x: -5.0d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "Jugoso cuarzo."
+			dependencies: ["215D2146BF114F77"]
+			hide: true
+			id: "0673C173B2AF2062"
+			tasks: [{
+				id: "74D1D4D0627E176B"
+				type: "item"
+				item: "appliedenergistics2:quartz_ore"
+				count: 10L
+			}]
+		}
+		{
+			title: "Un tarro de tierra"
+			x: -2.0d
+			y: 6.0d
+			shape: "circle"
+			subtitle: "Siempre viene bien tener tierra. Sirve para cosas y tal. "
+			dependencies: ["6AA7264E285DD699"]
+			hide: true
+			id: "7DEF747D11B663DD"
+			tasks: [{
+				id: "3780088CB6780142"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 200L
+			}]
+			rewards: [{
+				id: "56F1350524157D07"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 3
+			}]
+		}
+		{
+			title: "Fuerte como la roca"
+			x: -6.0d
+			y: 6.0d
+			shape: "circle"
+			subtitle: "Pica piedra que es gratis."
+			dependencies: ["6AA7264E285DD699"]
+			hide: true
+			id: "6EDB20E4B450F56C"
+			tasks: [{
+				id: "673710808BC761D5"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 200L
+			}]
+			rewards: [{
+				id: "203771A09DF1E9C3"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 3
+			}]
+		}
+		{
+			title: "Expansión termal"
+			x: -3.0d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "Descubre los minerales necesarios para activar la industria termal."
+			dependencies: ["215D2146BF114F77"]
+			hide: true
+			id: "2292047E3A8E3777"
+			tasks: [
+				{
+					id: "3778C6D4414FC938"
+					type: "item"
+					item: "thermal:ruby_ore"
+					count: 10L
+				}
+				{
+					id: "1B7F48EF5E9E1D0F"
+					type: "item"
+					item: "thermal:sapphire_ore"
+					count: 10L
+				}
+				{
+					id: "416AE3B879F516B7"
+					type: "item"
+					item: "thermal:apatite_ore"
+					count: 10L
+				}
+				{
+					id: "556250A0372D3B2F"
+					type: "item"
+					item: "thermal:nickel_ore"
+					count: 10L
+				}
+				{
+					id: "399069396639C8B5"
+					type: "item"
+					item: "thermal:lead_ore"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "15FD41D00B19938D"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Chorundumio"
+			x: -6.0d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "El material del futuro"
+			dependencies: ["0673C173B2AF2062"]
+			hide: true
+			id: "5BAE8242464DE45C"
+			tasks: [{
+				id: "4F389C6AF3AEAC59"
+				type: "item"
+				item: "stalwart_dungeons:chorundum_ore"
+				count: 10L
+			}]
+			rewards: [{
+				id: "38112848413AD971"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+	]
+}

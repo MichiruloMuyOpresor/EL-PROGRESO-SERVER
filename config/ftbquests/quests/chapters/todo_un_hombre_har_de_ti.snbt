@@ -1,0 +1,337 @@
+{
+	id: "51BA93B472650FE5"
+	group: "3DFB4960A301F22D"
+	order_index: 0
+	filename: "todo_un_hombre_har_de_ti"
+	title: "Entrenamiento Básico"
+	icon: "minecraft:green_bed"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Un buen comienzo"
+			x: 3.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Tendrás que hacer muchas veces la cama si quieres ser un buen soldado."
+			dependencies: ["4ADB977B2B0E8D2C"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "084396894A959A86"
+			tasks: [{
+				id: "2BBCFC3F0570AB19"
+				type: "item"
+				title: "Any #minecraft:beds"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				count: 5L
+				consume_items: true
+				only_from_crafting: true
+			}]
+			rewards: [{
+				id: "744BDC1625326210"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "\"¡No tengo toda la noche!\""
+			x: -4.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "Enseñale a esos hijos de puta quien manda. Espera a la noche y completa tu prueba de fuego."
+			dependencies: [
+				"451C775C4706B30F"
+				"4320D608C73E7BBA"
+			]
+			hide: true
+			id: "48E0AB08754F24B5"
+			tasks: [
+				{
+					id: "6B97D7DAFAB9F369"
+					type: "kill"
+					title: "Creepers de los huevos"
+					icon: "minecraft:creeper_head"
+					entity: "minecraft:creeper"
+					value: 2L
+				}
+				{
+					id: "4D689CAAA167771F"
+					type: "kill"
+					icon: "minecraft:zombie_head"
+					tags: [""]
+					entity: "minecraft:zombie"
+					value: 10L
+				}
+				{
+					id: "1346C858CE3A63CD"
+					type: "kill"
+					icon: "tconstruct:spider_head"
+					entity: "minecraft:spider"
+					value: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "37FB1927A2DD5E74"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "0D3E2B293DC3AEB3"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+			]
+		}
+		{
+			title: "Cardio "
+			icon: {
+				id: "minecraft:leather_boots"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "El cardio son los cimientos de la supervivencia. Echa a andar."
+			dependencies: ["4ADB977B2B0E8D2C"]
+			hide: true
+			id: "7ED23ABD192A18E8"
+			tasks: [{
+				id: "4EE09B9F4574A7A2"
+				type: "stat"
+				icon: {
+					id: "minecraft:leather_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:walk_one_cm"
+				value: 1000
+			}]
+			rewards: [{
+				id: "42CA190D15B71649"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "La Guerra es una M"
+			icon: "minecraft:crafting_table"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "Y por ese tienes que estar preparado. Completa este entrenamiento básico y te abrirás paso hacia un mundo de progreso. "
+			dependencies: ["6CDD9C5AE7E2243A"]
+			hide: true
+			size: 2.0d
+			id: "4ADB977B2B0E8D2C"
+			tasks: [{
+				id: "547500A1AECBE675"
+				type: "item"
+				title: "Any #forge:workbenches"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:workbenches"
+					}
+				}
+				only_from_crafting: true
+			}]
+			rewards: [{
+				id: "1087B64975F68F87"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+			}]
+		}
+		{
+			title: "Arsenal básico"
+			x: -2.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Fabrica tu primer kit de supervivencia. Es el primer paso para no comerte una mierda. Consejo: no les cojas cariño. "
+			dependencies: ["4ADB977B2B0E8D2C"]
+			hide: true
+			id: "451C775C4706B30F"
+			tasks: [
+				{
+					id: "619C25020865081B"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+				}
+				{
+					id: "795C1E1B7F2A70BB"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+				}
+				{
+					id: "51BB4A9DD5A70F6F"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+				}
+				{
+					id: "2D50610DC7DB425B"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+				}
+				{
+					id: "2F64508C5AD527DE"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+				}
+			]
+			rewards: [
+				{
+					id: "2294C05DA34806DA"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+				{
+					id: "620B5B86125817F2"
+					type: "item"
+					item: {
+						id: "minecraft:stone_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Arco y flechas"
+			x: -2.0d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "No salgas de casa sin él"
+			dependencies: ["4ADB977B2B0E8D2C"]
+			hide: true
+			id: "4320D608C73E7BBA"
+			tasks: [
+				{
+					id: "240DB3ABFD5A671B"
+					type: "item"
+					item: {
+						id: "minecraft:bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					only_from_crafting: true
+				}
+				{
+					id: "48858BB54E2B82C3"
+					type: "item"
+					item: "minecraft:arrow"
+					count: 10L
+					only_from_crafting: true
+				}
+			]
+			rewards: [{
+				id: "10F7FDEBA6ACCB64"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "¡Aguanta vivo!"
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Sólo tienes que no morir en dos días. Es fácil. "
+			dependencies: ["4ADB977B2B0E8D2C"]
+			hide: true
+			id: "01298EB48F5B4667"
+			tasks: [{
+				id: "1ECC86A689DCE462"
+				type: "stat"
+				icon: "doggytalents:throw_bone"
+				stat: "minecraft:time_since_death"
+				value: 50000
+			}]
+			rewards: [{
+				id: "16831003D9CB504A"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:iron_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "Comienza tu entrenamiento."
+			description: ["Conseguirás SkillFragments para mejorar a tu personaje en el panel de habilidades."]
+			size: 2.0d
+			id: "6CDD9C5AE7E2243A"
+			tasks: [{
+				id: "27E7F9B918A5A11A"
+				type: "checkmark"
+				title: "Todo un hombre haré de ti"
+			}]
+			rewards: [{
+				id: "4E69B6B072FF892F"
+				type: "item"
+				item: "rubber_duck:rubber_duck_item"
+			}]
+		}
+	]
+}

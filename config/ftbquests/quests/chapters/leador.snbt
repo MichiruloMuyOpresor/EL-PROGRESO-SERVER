@@ -1,0 +1,486 @@
+{
+	id: "1634C7ED26E5C51F"
+	group: "3DFB4960A301F22D"
+	order_index: 2
+	filename: "leador"
+	title: "Buena Madera"
+	icon: {
+		id: "minecraft:netherite_axe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Estoy hecho de buena madera"
+			icon: {
+				id: "minecraft:netherite_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 4.0d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "Tala troncos. Simple. Los buenos leñadores talan troncos. Toma un hacha por tus servicios."
+			dependencies: ["51BA93B472650FE5"]
+			hide: true
+			size: 2.0d
+			id: "7823F4041515FD26"
+			tasks: [{
+				id: "42CBEE4152FED6C5"
+				type: "item"
+				item: "minecraft:spruce_log"
+				count: 30L
+			}]
+			rewards: [
+				{
+					id: "154A01F2FD06281F"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 3
+				}
+				{
+					id: "4D84D09D98331EFB"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Locos por los abetos"
+			x: 6.0d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Bien es sabido que el abeto da la mejor madera. Que mierda de leñador serías si no lo supieras. "
+			dependencies: ["7823F4041515FD26"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "05B5FB33CFFBE477"
+			tasks: [
+				{
+					id: "1F81764BDBD51A69"
+					type: "item"
+					item: "minecraft:spruce_stairs"
+				}
+				{
+					id: "2AD9355410CD2CDC"
+					type: "item"
+					item: "quark:spruce_vertical_slab"
+				}
+				{
+					id: "7BAE6B682E388A21"
+					type: "item"
+					item: "quark:vertical_spruce_planks"
+				}
+				{
+					id: "6B85ACC8E47176D5"
+					type: "item"
+					item: "minecraft:spruce_planks"
+				}
+				{
+					id: "30FD0730F4DA4335"
+					type: "item"
+					item: "supplementaries:hanging_sign_spruce"
+				}
+				{
+					id: "33D8EC4497835BC1"
+					type: "item"
+					item: "minecraft:spruce_sign"
+				}
+				{
+					id: "794FCF767F519928"
+					type: "item"
+					item: "quark:spruce_chest"
+				}
+				{
+					id: "0A64C12E8D7ACF24"
+					type: "item"
+					item: "minecraft:spruce_trapdoor"
+				}
+				{
+					id: "07F14ED78E4658EE"
+					type: "item"
+					item: "minecraft:spruce_door"
+				}
+			]
+			rewards: [
+				{
+					id: "065EBA7761BB4FB7"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+				{
+					id: "19E2A33C395F55FA"
+					type: "item"
+					item: {
+						id: "ravencoffee:coffee_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Aquí no se tira nada"
+			x: 6.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "La madera a la deriva también sirve, o eso dicen. Trae un poco. Y no refunfuñes tanto cojones."
+			dependencies: ["05B5FB33CFFBE477"]
+			hide: true
+			id: "2E6FC2D0CC68BADB"
+			tasks: [{
+				id: "61D852E513BB591E"
+				type: "item"
+				item: "aquaculture:driftwood"
+				count: 10L
+			}]
+			rewards: [{
+				id: "5F4B1BCD6E55C20D"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Maderas comunes"
+			x: 4.0d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "Combínalas para tener la casa más bonita y también la que mejor arde."
+			dependencies: ["38AE64EC541DC59F"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "58933EFD105032BF"
+			tasks: [
+				{
+					id: "12F87ADEF9736970"
+					type: "item"
+					item: "minecraft:birch_log"
+				}
+				{
+					id: "0C18B58F14782178"
+					type: "item"
+					item: "minecraft:oak_log"
+				}
+				{
+					id: "3D027DB78D7D5B38"
+					type: "item"
+					item: "minecraft:dark_oak_log"
+				}
+				{
+					id: "2917DEC5958E5A84"
+					type: "item"
+					item: "minecraft:spruce_log"
+				}
+				{
+					id: "4C11A90E47B0F34F"
+					type: "item"
+					item: "minecraft:acacia_log"
+				}
+			]
+			rewards: [
+				{
+					id: "094C3DC7CD3BBDD4"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+				{
+					id: "15B640A1F9B7A3DE"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Mejor que usar los puños "
+			icon: {
+				id: "minecraft:wooden_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "Nada como un buen set de herramientas de la mejor madera. Realmente solo valen para esto porque vaya mierda de herramientas. Anda toma hierro y hazte unas en condiciones."
+			dependencies: ["05B5FB33CFFBE477"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "38AE64EC541DC59F"
+			tasks: [
+				{
+					id: "6A1B32336283C53B"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "482CAAA3D281BF47"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4A8B6F3214124FE9"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "55CE32E3508587A1"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7E3512B8E3D20E40"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "49FBB50D8592197F"
+					type: "item"
+					item: {
+						id: "aquaculture:wooden_fillet_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2AA4983EBAF09473"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+				{
+					id: "5186BADFABD4AF10"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 15
+				}
+			]
+		}
+		{
+			title: "Maderas exóticas"
+			x: 2.0d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "No parecen ni madera pero joder como molan. En el infierno están. Buena suerte. "
+			dependencies: ["58933EFD105032BF"]
+			hide: true
+			id: "0FB3CEBD14340A65"
+			tasks: [
+				{
+					id: "1A7F09696B261098"
+					type: "item"
+					item: "betternether:wart_log"
+				}
+				{
+					id: "40FA5039D4F03396"
+					type: "item"
+					item: "betternether:anchor_tree_log"
+				}
+				{
+					id: "06F8E9A78474659D"
+					type: "item"
+					item: "betternether:willow_log"
+				}
+				{
+					id: "6D137F5A06BD2F65"
+					type: "item"
+					item: "betternether:rubeus_log"
+				}
+				{
+					id: "0B5BF2843D11D209"
+					type: "item"
+					item: "betternether:mushroom_fir_log"
+				}
+				{
+					id: "006A1B07822DC41B"
+					type: "item"
+					item: "betternether:nether_sakura_log"
+				}
+			]
+			rewards: [
+				{
+					id: "5A667C23B6616F49"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 10
+				}
+				{
+					id: "27613424A2128D9C"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Maderas legendarias"
+			x: 2.0d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "Morirás intentándolo."
+			dependencies: ["0FB3CEBD14340A65"]
+			hide: true
+			id: "46A51FB8FFA7419F"
+			tasks: [
+				{
+					id: "326F2C48CA97D670"
+					type: "item"
+					item: "betterendforge:lucernia_log"
+				}
+				{
+					id: "330ABD78A7E5C4E2"
+					type: "item"
+					item: "betterendforge:mossy_glowshroom_log"
+				}
+				{
+					id: "4D0F7CA666A83263"
+					type: "item"
+					item: "betterendforge:pythadendron_log"
+				}
+				{
+					id: "30169B4C341ECD85"
+					type: "item"
+					item: "betterendforge:umbrella_tree_log"
+				}
+				{
+					id: "60510776ABA4ED33"
+					type: "item"
+					item: "betterendforge:helix_tree_log"
+				}
+			]
+			rewards: [
+				{
+					id: "142E9E4BE85B21AA"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 10
+				}
+				{
+					id: "56D6BA174E4972B6"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Encargo de lujo"
+			x: 4.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "No sé que carajo son pero las quiero. "
+			dependencies: ["2E6FC2D0CC68BADB"]
+			hide: true
+			id: "17E737F203722E4B"
+			tasks: [{
+				id: "7BECDDB05DACBE16"
+				type: "item"
+				item: "forbidden_arcanus:arcane_edelwood_planks"
+				count: 20L
+			}]
+			rewards: [{
+				id: "202E42F22A3B25C8"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "El tronco misterioso"
+			x: 2.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "Nadie nunca ha visto uno. Buena suerte."
+			dependencies: ["17E737F203722E4B"]
+			hide: true
+			id: "721D482420BA378C"
+			tasks: [{
+				id: "3636A5D786E244AE"
+				type: "item"
+				item: "forbidden_arcanus:mysterywood_log"
+				count: 20L
+			}]
+			rewards: [
+				{
+					id: "767C3D5A2AA35766"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 10
+				}
+				{
+					id: "154ACAAA9D995EC3"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 10
+				}
+			]
+		}
+	]
+}

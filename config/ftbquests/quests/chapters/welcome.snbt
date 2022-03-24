@@ -1,0 +1,223 @@
+{
+	id: "2EE5FBD9BD7C0265"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Bienvenido"
+	icon: "minecraft:diamond"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "El progreso"
+			icon: "rubber_duck:rubber_duck_item"
+			disable_toast: true
+			x: -2.0d
+			y: -4.0d
+			shape: "hexagon"
+			description: [
+				"Bienvenido al Modpack del Progreso. Toma, pon esta macetita en tu casa como muestra de agradecimiento."
+				""
+				"Si estás perdido, a continuación te describo como avanzar de forma ordenada y coherente. La otra opción es sudar y disfrutar del juego a tu estilo. "
+				"¡Tú eliges! A mí me la rasca. "
+			]
+			size: 2.0d
+			id: "09356B3BEF298E06"
+			tasks: [{
+				id: "7670232EEE67FE29"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "732AA66A91BA5C2B"
+					type: "item"
+					item: "biomesoplenty:wildflower"
+				}
+				{
+					id: "1EE277823ACFB886"
+					type: "item"
+					item: "minecraft:flower_pot"
+				}
+			]
+		}
+		{
+			title: "Mira el powerpoint"
+			icon: "minecraft:grass_block"
+			disable_toast: true
+			x: -3.5d
+			y: -2.5d
+			shape: "hexagon"
+			description: [
+				"En él puedes ver muchosde los mods que hay explicados y como funciona el sistema de progresión de tu personaje. "
+				""
+			]
+			dependencies: ["09356B3BEF298E06"]
+			size: 1.5d
+			id: "69D55492A8F42A94"
+			tasks: [{
+				id: "0680791525813778"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "I"
+			icon: "create:cogwheel"
+			disable_toast: true
+			x: -4.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "Primer paso: sobrevive."
+			description: ["Pero con calma. Toma un té."]
+			dependencies: ["69D55492A8F42A94"]
+			size: 1.5d
+			id: "407236D2B1D2257D"
+			tasks: [{
+				id: "71C8186F3C7861F2"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "3D4250D2B4800C1C"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "II"
+			icon: "create:large_cogwheel"
+			disable_toast: true
+			x: -3.5d
+			y: 0.5d
+			shape: "hexagon"
+			subtitle: "Segundo paso: Inicia las misiones de \"El Progreso\""
+			description: [
+				""
+				"Esto te servirá para mejorar las habilidades de tu personaje lo cual es muy importante. Toma una galleta."
+			]
+			dependencies: ["407236D2B1D2257D"]
+			size: 1.5d
+			id: "2C7ADB6C11B918B1"
+			tasks: [{
+				id: "36AF6DA4FFED8DC2"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1BF6428DE53BC0FF"
+				type: "item"
+				item: "minecraft:cookie"
+			}]
+		}
+		{
+			title: "III"
+			icon: "kubejs:andesite_machine"
+			disable_toast: true
+			x: -2.0d
+			y: 1.0d
+			shape: "hexagon"
+			subtitle: "Tercer paso: La Guía industrial"
+			description: [
+				""
+				"Todo es opcional. Pero viene muy bien para descubrir el contenido de forma ordenada."
+			]
+			dependencies: ["2C7ADB6C11B918B1"]
+			size: 1.5d
+			id: "1947C6CE179EBAC6"
+			tasks: [{
+				id: "235CD0501F0E807C"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "IV"
+			icon: "thermal:machine_press"
+			disable_toast: true
+			x: -0.5d
+			y: 0.5d
+			shape: "hexagon"
+			subtitle: "Cuarto Paso: Sede Intergaláctica"
+			description: [
+				""
+				"La sede intergaláctica te permite acceder al comercio centralizado. Una forma optativa con la que avanzar en tu aventura. Compra y vende a tu criterio. "
+			]
+			dependencies: ["1947C6CE179EBAC6"]
+			size: 1.5d
+			id: "58E38BA6D927409F"
+			tasks: [{
+				id: "3A69DCA5AB7A36F2"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "583C35BA7A7B9004"
+				type: "item"
+				item: "thermal:silver_coin"
+			}]
+		}
+		{
+			title: "Quest Content Overwiew"
+			icon: {
+				id: "occultism:book_of_calling_djinni_manage_machine"
+				Count: 1b
+				tag: {
+					spiritName: "Marredaeus"
+				}
+			}
+			disable_toast: true
+			x: -1.5d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "RESUMEN"
+			description: [
+				"- &6El Tablón de Anuncios &r Aquí puedes obtener liquidez de varias formas. Ten en cuanta que necesitas una Máquina de Comercio(Trade Machine)."
+				""
+				"- &6El Mercado&r te da la opción de gastar tus moneditas en una serie de cacharros y objetos útiles."
+				""
+				"- &6Los envíos &r son la forma automatizada de intercambiar monedas por recursos. Aquí puedes comorar tarjetas de importación para dicho fin."
+				""
+				"- &3La Guía Industrial&r te da acceso a los conocimientos necesarios para automatizar mediante máquinas todo lo que quieras. Esto es completamente opcional, pero si eres nuevo estoy seguro de que te servirá. "
+				""
+				"- &3La Metalurgia &rte enseñará lo necesario para procesar minerales de formas nuevas."
+				""
+				"- &3Los Salvavidas&r te dan acceso a ciertos objetos y utilidades para superar los retos que se presentan."
+			]
+			dependencies: ["58E38BA6D927409F"]
+			size: 1.5d
+			id: "00003FCBB33E62C4"
+			tasks: [{
+				id: "181383A364ECB6F1"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "67E25D801A479C56"
+				type: "item"
+				item: "minecraft:writable_book"
+			}]
+		}
+		{
+			title: "¡Buena Suerte!"
+			icon: "minecraft:gold_block"
+			disable_toast: true
+			x: 2.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "Tómatelo con calma, y comparte esta tarta."
+			dependencies: ["00003FCBB33E62C4"]
+			size: 2.0d
+			id: "31EDFA6D2FF86CB0"
+			tasks: [{
+				id: "422CD0E2E5F2F158"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "27FC36C810ADB897"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "5CDDE2A68591DB52"
+					type: "item"
+					item: "minecraft:cake"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,149 @@
+{
+	id: "746465DB1F64A197"
+	group: "3DFB4960A301F22D"
+	order_index: 5
+	filename: "sombreros"
+	title: "Sombreros "
+	icon: "xreliquary:witch_hat"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "Desbloquea 25 sombreros"
+			dependencies: ["51BA93B472650FE5"]
+			hide: true
+			size: 1.5d
+			id: "13C1FB5A2E4E2D0C"
+			tasks: [{
+				id: "34BAE28BEA53EF57"
+				type: "advancement"
+				icon: {
+					id: "fairylights:witch_light"
+					Count: 1b
+					tag: {
+						color: 6316128
+					}
+				}
+				advancement: "hats:hats/hats_unlocked_25"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "75A23623CF0A50A5"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 2
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			subtitle: "La mitad de ellos"
+			dependencies: ["2E3219BFEB7E0942"]
+			hide: true
+			id: "07034B573BC7401C"
+			tasks: [{
+				id: "385773D99F829C71"
+				type: "advancement"
+				advancement: "hats:hats/variants_50"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "62A6E3C60D131A5F"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 10
+				}
+				{
+					id: "7759489972F23024"
+					type: "item"
+					count: 10
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 2.0d
+			subtitle: "75% de todos. Ya casi estás. "
+			dependencies: ["07034B573BC7401C"]
+			hide: true
+			id: "0238F3C4CADCDBD9"
+			tasks: [{
+				id: "58813C46EB9477DA"
+				type: "advancement"
+				advancement: "hats:hats/variants_75"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "07108125A5B35CF6"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 15
+				}
+				{
+					id: "39EBCA0DDC2409EC"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 20
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: -2.0d
+			subtitle: "Estás enfermo. Te mereces esta espada."
+			dependencies: ["0238F3C4CADCDBD9"]
+			hide: true
+			id: "6041EB1B3C3D914A"
+			tasks: [{
+				id: "2C09116766A9A5A1"
+				type: "advancement"
+				advancement: "hats:hats/variants_100"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "184DA9B58058FD65"
+				type: "item"
+				item: {
+					id: "forbidden_arcanus:draco_arcanus_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			subtitle: "Desbloquea 50!"
+			dependencies: ["13C1FB5A2E4E2D0C"]
+			hide: true
+			id: "2E3219BFEB7E0942"
+			tasks: [{
+				id: "16DDD7BE901E3032"
+				type: "advancement"
+				advancement: "hats:hats/hats_unlocked_50"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "36D425A862653188"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+				{
+					id: "14F58732F93B2266"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 5
+				}
+			]
+		}
+	]
+}

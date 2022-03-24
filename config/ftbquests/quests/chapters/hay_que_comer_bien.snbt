@@ -1,0 +1,433 @@
+{
+	id: "66AC99C8CCF14F38"
+	group: "3DFB4960A301F22D"
+	order_index: 1
+	filename: "hay_que_comer_bien"
+	title: "Pan y vino"
+	icon: "farmersdelight:ham"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Largas y picudas"
+			x: -2.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Nada como ver crecer a tus primeras zanahorias."
+			dependencies: ["36766392AB0CE521"]
+			hide: true
+			id: "66CDFFF91D1F4D7B"
+			tasks: [{
+				id: "59070551925555B6"
+				type: "item"
+				item: "minecraft:carrot"
+				count: 50L
+			}]
+			rewards: [
+				{
+					id: "3638DBFB829F6A9E"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 3
+				}
+				{
+					id: "28E008B08B68DFB9"
+					type: "item"
+					item: "minecraft:potato"
+				}
+			]
+		}
+		{
+			title: "PA-TA-TAS"
+			x: -2.0d
+			y: -5.0d
+			shape: "rsquare"
+			subtitle: "Fritas, codidas, al vapor, asadas o con un buen estofado de conejo. Así es como deben usarse. "
+			dependencies: ["66CDFFF91D1F4D7B"]
+			hide: true
+			id: "67881426334C0618"
+			tasks: [{
+				id: "6E44A1E418D4887E"
+				type: "item"
+				item: "minecraft:potato"
+				count: 50L
+			}]
+			rewards: [{
+				id: "2B3F35D485F61CA2"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 3
+			}]
+		}
+		{
+			title: "Buenas proteinas"
+			x: 5.0d
+			y: -1.0d
+			subtitle: "Una dieta variada es importante para ser repelente."
+			dependencies: ["49FBFE9E03535BFF"]
+			hide: true
+			id: "63562AD5727ED191"
+			tasks: [
+				{
+					id: "26008FA7A3BB03C5"
+					type: "item"
+					item: "minecraft:cod"
+					count: 25L
+				}
+				{
+					id: "60B935902F76EDC9"
+					type: "item"
+					item: "minecraft:salmon"
+					count: 50L
+				}
+			]
+			rewards: [{
+				id: "4093E0BB4D756E0B"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 4
+			}]
+		}
+		{
+			title: "Rica carne deshuesada"
+			x: -1.0d
+			y: -1.0d
+			subtitle: "Somos lo que comemos."
+			dependencies: ["49FBFE9E03535BFF"]
+			hide: true
+			id: "197FBC11AA6F359B"
+			tasks: [{
+				id: "10F924F218EB8903"
+				type: "item"
+				item: "minecraft:beef"
+				count: 20L
+			}]
+			rewards: [{
+				id: "08EB19BEA42FD465"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Panes para tu señor"
+			x: 0.0d
+			y: -5.0d
+			subtitle: "Entrega panes, y nada de que estén duros ni mierdas raras. "
+			dependencies: ["36766392AB0CE521"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "07DD5F5812A8D277"
+			tasks: [{
+				id: "5FF27279CC5D4262"
+				type: "item"
+				item: "minecraft:bread"
+				count: 50L
+			}]
+			rewards: [{
+				id: "330B9E14A769FA4E"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 3
+			}]
+		}
+		{
+			title: "Empecemos suave"
+			x: 0.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "¡Cultiva trigo! Las semillas las puedes conseguir cortando hierba. O robando a tus mejores amigos."
+			dependencies: ["49FBFE9E03535BFF"]
+			hide: true
+			id: "36766392AB0CE521"
+			tasks: [{
+				id: "13E41648209CA52A"
+				type: "item"
+				item: "minecraft:wheat"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "0A07D0F2434A96C3"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 3
+				}
+				{
+					id: "06E92E6D47E61CC8"
+					type: "item"
+					item: "minecraft:carrot"
+				}
+			]
+		}
+		{
+			title: "Difícil pero no imposible"
+			x: 5.0d
+			y: -6.0d
+			subtitle: "Con el invierno apetece."
+			dependencies: ["62C26C120A71E38B"]
+			hide: true
+			id: "586DA7BFE530B0AF"
+			tasks: [{
+				id: "055CBC0B2EEA0809"
+				type: "item"
+				item: "farmersdelight:baked_cod_stew"
+				count: 5L
+			}]
+			rewards: [{
+				id: "0A163A75C1EEC780"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Así vivirás más"
+			x: 2.0d
+			y: -5.0d
+			subtitle: "Una ensalada de cada tipo para que todos te odien."
+			dependencies: ["62C26C120A71E38B"]
+			hide: true
+			id: "5255240DC012E50C"
+			tasks: [
+				{
+					id: "4166F21F3BE387A6"
+					type: "item"
+					item: "farmersdelight:fruit_salad"
+				}
+				{
+					id: "1AB17A2CA447CA14"
+					type: "item"
+					item: "farmersdelight:mixed_salad"
+				}
+				{
+					id: "72373A4975697A94"
+					type: "item"
+					item: "farmersdelight:nether_salad"
+				}
+			]
+			rewards: [{
+				id: "64B67A80AC374E42"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.0d
+			dependencies: ["62C26C120A71E38B"]
+			hide: true
+			id: "1566E5D9FFA7B1B8"
+			tasks: [{
+				id: "5814A5FB04EC63D2"
+				type: "item"
+				item: "farmersdelight:roast_chicken_block"
+				count: 5L
+			}]
+			rewards: [{
+				id: "2B947F0A9EAB6036"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 4
+			}]
+		}
+		{
+			title: "Alimenta a las bestias"
+			x: 3.0d
+			y: -6.0d
+			subtitle: "O serías un dueño de mierda. "
+			dependencies: ["62C26C120A71E38B"]
+			hide: true
+			id: "1B7C558FE7E7770E"
+			tasks: [
+				{
+					id: "7FEF660F1AC42C3F"
+					type: "item"
+					item: "farmersdelight:dog_food"
+				}
+				{
+					id: "4CC99B1154C3189F"
+					type: "item"
+					item: "farmersdelight:horse_feed"
+				}
+			]
+			rewards: [{
+				id: "5D19DD7593B98A8D"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Señor cocinero"
+			x: 4.0d
+			y: -3.0d
+			subtitle: "Comienza con hacerte una buena cocina y nunca volverás a pasar hambre."
+			dependencies: ["49FBFE9E03535BFF"]
+			hide: true
+			id: "62C26C120A71E38B"
+			tasks: [
+				{
+					id: "29A2CE1219AFC780"
+					type: "item"
+					item: "farmersdelight:cooking_pot"
+					only_from_crafting: true
+				}
+				{
+					id: "5670439051D244D9"
+					type: "item"
+					item: "farmersdelight:stove"
+					only_from_crafting: true
+				}
+				{
+					id: "54FF531A9E432B25"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+				{
+					id: "5F8F5CCA6D00459D"
+					type: "item"
+					item: {
+						id: "farmersdelight:skillet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "17431978AD31B77D"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "01A1797D97982342"
+					type: "item"
+					item: {
+						id: "farmersdelight:iron_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6CBB4120440D4FC0"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			dependencies: ["67881426334C0618"]
+			hide: true
+			id: "20757C9FE9602368"
+			tasks: [{
+				id: "2F53B418FF131DC9"
+				type: "item"
+				item: "farmersdelight:onion"
+				count: 50L
+			}]
+			rewards: [{
+				id: "2A2DE8555C441DDE"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 3
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			dependencies: ["20757C9FE9602368"]
+			hide: true
+			id: "163B12BA14190447"
+			tasks: [{
+				id: "1E4EED7393D4BE30"
+				type: "item"
+				item: "farmersdelight:rice"
+				count: 50L
+			}]
+			rewards: [{
+				id: "45F85687559AB476"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 3
+			}]
+		}
+		{
+			icon: "farmersdelight:ham"
+			x: 2.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "Lleva una dieta variada y rica en proteínas. Al margen de eso tu señor necesita hacer un gran banquete. Así que ve calentando el horno."
+			dependencies: ["51BA93B472650FE5"]
+			hide: true
+			size: 2.0d
+			id: "49FBFE9E03535BFF"
+			tasks: [{
+				id: "16B14D85286BC830"
+				type: "checkmark"
+				title: "COMER COMER COMER"
+			}]
+			rewards: [
+				{
+					id: "3EE8A6182F51B40D"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+				{
+					id: "1A2CF090DBDB2C24"
+					type: "item"
+					item: "minecraft:coal_block"
+				}
+			]
+		}
+		{
+			title: "Glaseado"
+			x: 6.0d
+			y: -5.0d
+			subtitle: "Riquísimo."
+			dependencies: ["62C26C120A71E38B"]
+			hide: true
+			id: "04FA2ABC355079A1"
+			tasks: [{
+				id: "5EAFA375309399C9"
+				type: "item"
+				item: "farmersdelight:honey_glazed_ham_block"
+				count: 3L
+			}]
+			rewards: [{
+				id: "688C10A4C5F8EFFF"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "A la asturiana"
+			x: 2.0d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Prepara más sidra para tu señor."
+			dependencies: ["49FBFE9E03535BFF"]
+			hide: true
+			id: "742A1C144FAED639"
+			tasks: [{
+				id: "68C68288E98C6924"
+				type: "item"
+				item: "farmersdelight:apple_cider"
+				count: 10L
+			}]
+			rewards: [{
+				id: "036828101B7B8B9B"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+	]
+}

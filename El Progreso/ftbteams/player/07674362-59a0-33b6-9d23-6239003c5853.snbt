@@ -1,0 +1,16 @@
+{
+	id: "07674362-59a0-33b6-9d23-6239003c5853"
+	type: "player"
+	player_name: "Michirulo"
+	ranks: {
+		07674362-59a0-33b6-9d23-6239003c5853: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "Michirulo"
+		"ftbteams:color": "#FF596F"
+		"ftbteams:description": ""
+		"ftbteams:free_to_join": 0b
+	}
+	message_history: [ ]
+	extra: { }
+}

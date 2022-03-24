@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "3DFB4960A301F22D", title: "El Progreso" }
+		{ id: "0810E42B2DD79973", title: "Sede Intergaláctica" }
+		{ id: "331B6409EF6A7840", title: "Guía industrial" }
+	]
+}

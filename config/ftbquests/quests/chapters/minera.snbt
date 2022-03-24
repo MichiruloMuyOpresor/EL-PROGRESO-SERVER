@@ -1,0 +1,325 @@
+{
+	id: "56F970B20490828B"
+	group: "3DFB4960A301F22D"
+	order_index: 4
+	filename: "minera"
+	title: "Mata y remata"
+	icon: {
+		id: "minecraft:netherite_sword"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			x: -10.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Ayuda a hacer del mundo un lugar mejor."
+			dependencies: ["443FC2CFFD7B0DEB"]
+			hide: true
+			id: "486817E99ADDB5C1"
+			tasks: [{
+				id: "4F7AF6C295F6BF8A"
+				type: "kill"
+				title: "Mata zombis"
+				icon: "minecraft:zombie_head"
+				entity: "minecraft:zombie"
+				value: 50L
+			}]
+			rewards: [{
+				id: "39E0BE30CD82FDC3"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			x: -9.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "No vale si explota solito. "
+			dependencies: ["486817E99ADDB5C1"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "7B187D66362A9B02"
+			tasks: [{
+				id: "1379904C7245582A"
+				type: "kill"
+				title: "Mata Creepers"
+				icon: "minecraft:creeper_head"
+				entity: "minecraft:creeper"
+				value: 30L
+			}]
+			rewards: [{
+				id: "63B3B99BA5F56787"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Dispara a esos hijos de puta. "
+			dependencies: ["7B187D66362A9B02"]
+			hide: true
+			id: "0029E385E2A7C8D6"
+			tasks: [{
+				id: "547D0EAD23349E63"
+				type: "kill"
+				title: "Mata pajarracos nocturnos"
+				icon: "minecraft:phantom_membrane"
+				entity: "minecraft:phantom"
+				value: 25L
+			}]
+			rewards: [{
+				id: "274D2CCDD1C58699"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Mata Ahogados"
+			x: -7.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Son los cabronazos esos que están bajo el agua."
+			dependencies: ["0029E385E2A7C8D6"]
+			hide: true
+			id: "753254E47F143810"
+			tasks: [{
+				id: "33136D740181B218"
+				type: "kill"
+				icon: {
+					id: "minecraft:trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:drowned"
+				value: 30L
+			}]
+			rewards: [{
+				id: "57F4479F02127725"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:iron_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -12.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Que mejor manera de progresar con tu personaje que impartiendo justicia."
+			dependencies: ["51BA93B472650FE5"]
+			hide: true
+			size: 1.5d
+			id: "443FC2CFFD7B0DEB"
+			tasks: [{
+				id: "3F280D4ED3A7204B"
+				type: "checkmark"
+				title: "Mata y remata"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "No tienes alma."
+			dependencies: ["443FC2CFFD7B0DEB"]
+			id: "248D5CB153D56A81"
+			tasks: [{
+				id: "06E1F0D2FE35496D"
+				type: "kill"
+				title: "Mata pollos"
+				icon: "farmersdelight:ham"
+				entity: "minecraft:chicken"
+				value: 100L
+			}]
+			rewards: [{
+				id: "265D6E9177687FB1"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Mata Pigglins"
+			icon: "tconstruct:pig_iron_block"
+			x: -12.0d
+			y: -4.0d
+			shape: "rsquare"
+			subtitle: "Son los mamones esos que van por el infierno, los de la cara de cerdo. "
+			dependencies: ["443FC2CFFD7B0DEB"]
+			id: "6DE2599B08F1BE2F"
+			tasks: [{
+				id: "1D61754A6B8C6A69"
+				type: "kill"
+				entity: "minecraft:piglin"
+				value: 35L
+			}]
+			rewards: [
+				{
+					id: "14F51CC2FF5D47E2"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+				{
+					id: "7C39FE6887C7517E"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["443FC2CFFD7B0DEB"]
+			id: "16C331AD655E8BED"
+			tasks: [{
+				id: "4E23580DFD8F9006"
+				type: "kill"
+				title: "Mata Endermans"
+				icon: "tconstruct:enderman_head"
+				entity: "minecraft:enderman"
+				value: 20L
+			}]
+			rewards: [
+				{
+					id: "77C846939A99C624"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0FB20DD74A95E66E"
+					type: "item"
+					item: "rereskillablerereforked:skill_fragment"
+					count: 5
+				}
+			]
+		}
+		{
+			title: "¡Mátala cojones!"
+			icon: "tconstruct:spider_head"
+			x: -6.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Mata arañas"
+			dependencies: ["753254E47F143810"]
+			hide: true
+			id: "6B63E831B40AE607"
+			tasks: [{
+				id: "78B27327B4AF2042"
+				type: "kill"
+				entity: "minecraft:spider"
+				value: 50L
+			}]
+			rewards: [{
+				id: "45F43A2DA3BE9E8B"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			title: "Mata huesitos"
+			icon: "graveyard:skull_pile"
+			x: -5.0d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["6B63E831B40AE607"]
+			hide: true
+			id: "36334E5911623F7C"
+			tasks: [{
+				id: "3DD18B2056069F66"
+				type: "kill"
+				entity: "minecraft:skeleton"
+				value: 50L
+			}]
+		}
+		{
+			title: "¿Otra oleada?"
+			x: -4.0d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["36334E5911623F7C"]
+			hide: true
+			id: "2F3E5E2190000ADB"
+			tasks: [{
+				id: "752E623D4DB84F48"
+				type: "kill"
+				icon: "minecraft:zombie_head"
+				entity: "minecraft:zombie"
+				value: 100L
+			}]
+			rewards: [{
+				id: "4D62F5AB6021E889"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			icon: "graveyard:leaning_wither_skeleton"
+			x: -11.0d
+			y: -5.0d
+			shape: "rsquare"
+			subtitle: "Cuidado, son letales. Están en las fortalezas del infierno o en casa de tus suegros."
+			dependencies: ["6DE2599B08F1BE2F"]
+			hide: true
+			id: "7CC546030E7F4568"
+			tasks: [{
+				id: "268D6D6A1C50EC54"
+				type: "kill"
+				title: "Mata Huesitos negros"
+				icon: "minecraft:wither_skeleton_skull"
+				entity: "minecraft:wither_skeleton"
+				value: 50L
+			}]
+			rewards: [{
+				id: "7D2DE4B9173CC5C3"
+				type: "item"
+				item: "rereskillablerereforked:skill_fragment"
+				count: 5
+			}]
+		}
+		{
+			x: -11.0d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["248D5CB153D56A81"]
+			hide: true
+			id: "50DE07A85359369B"
+			tasks: [{
+				id: "41475DA84DA60773"
+				type: "kill"
+				title: "¡Para la sopa!"
+				icon: "aquaculture:box_turtle"
+				entity: "minecraft:turtle"
+				value: 5L
+			}]
+		}
+	]
+}
